@@ -302,7 +302,7 @@ RSpec.describe User, type: :model do
 
     it ".generate_slug" do
       user = create(:user, name: "Nikki Holland Plum")
-      expect(user.slug). to eq("nikkihollandplum" + SecureRandom.uuid)
+      expect(user.slug).to include("nikkihollandplum")
    end
   end
 end

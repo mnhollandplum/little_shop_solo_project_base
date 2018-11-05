@@ -14,14 +14,6 @@ RSpec.describe 'Admin-only user management' do
     fill_in :password, with: @admin.password
     click_button 'Log in'
 
-    visit users_path
-
-    within "#user-#{@active_user.id}" do
-      click_link "Edit User's Slug"
-    end
-
-     expect(current_path).to eq(edit_admin_user_path(@active_user))
-
      visit user_path(@active_user)
 
      click_link "Edit User's Slug"

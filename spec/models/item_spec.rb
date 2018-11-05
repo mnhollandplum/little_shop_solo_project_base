@@ -16,6 +16,11 @@ RSpec.describe Item, type: :model do
     it { should validate_numericality_of(:inventory).is_greater_than_or_equal_to(0) }
   end
 
+  it ".generate_slug" do
+    item = create(:item, name: "this item")
+    expect(item.slug). to eq("thisitem" + SecureRandom.uuid)
+ end
+
   describe 'Class Methods' do
     it '.popular_items(quantity)' do
       user = create(:user)

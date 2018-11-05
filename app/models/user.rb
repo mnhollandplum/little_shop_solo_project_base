@@ -149,6 +149,6 @@ class User < ApplicationRecord
 
 private
   def generate_slug
-    self.slug = name.downcase.delete(" ")
+    self.slug = name.downcase.delete(" ") if name
   end
 end

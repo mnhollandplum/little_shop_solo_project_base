@@ -15,14 +15,14 @@ class ItemsController < ApplicationController
   end
 
   def show
-    @item = Item.find(params[:id])
+    @item = Item.find_by(slug: params[:slug])
   end
 
   def edit
     render file: 'errors/not_found', status: 404 if current_user.nil?
     @merchant = User.find_by(slug: params[:merchant_slug])
     render file: 'errors/not_found', status: 404 unless current_admin? || current_user == @merchant
-    @item = Item.find(params[:id])
+    @item = Item.find_by(slug: params[:slug])
     @form_url = merchant_item_path(@merchant, @item)
   end
 

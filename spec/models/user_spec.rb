@@ -92,6 +92,7 @@ RSpec.describe User, type: :model do
   end
 
   describe 'Instance Methods' do
+
     it '.merchant_items' do
       user = create(:user)
       merchant = create(:merchant)
@@ -107,6 +108,7 @@ RSpec.describe User, type: :model do
 
       expect(merchant.merchant_orders).to eq([order_1, order_2])
     end
+
     it '.merchant_items(:pending)' do
       user = create(:user)
       merchant = create(:merchant)

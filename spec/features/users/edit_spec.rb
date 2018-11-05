@@ -19,6 +19,8 @@ RSpec.describe 'User Edit Page, aka Profile Edit' do
       click_link "Edit Profile Data"
       expect(current_path).to eq(profile_edit_path)
 
+      expect(page).to_not have_content("Edit User's Slug")
+
       fill_in :user_email, with: new_email
       click_button 'Update User'
 

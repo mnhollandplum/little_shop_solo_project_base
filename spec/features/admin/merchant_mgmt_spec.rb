@@ -68,6 +68,25 @@ RSpec.describe 'Admin-only merchant management' do
     visit merchant_path(@active_merchant)
     expect(page.status_code).to eq(404)
   end
+
+  it 'allows admin to update merchants slug' do
+    visit login_path
+      fill_in :email, with: @admin.email
+      fill_in :password, with: @admin.password
+      click_button 'Log in'
+
+      visit merchant_path(@active_merchant)
+      click_link "Edit User's Slug"
+
+      expect(current_path).to eq(edit_admin_user_path(@active_merchant))
+
+      fill_in :user_slug, with: "thisisanewslug"
+
+      click_button 'Update User'
+
+      expect(current_path).to eq('/merchants/thisisanewslug')
+    end
+
   describe 'redirects admin users to a proper page' do
     scenario 'when a user path is really a merchant' do
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@admin)

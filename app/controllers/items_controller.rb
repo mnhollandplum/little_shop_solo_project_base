@@ -47,7 +47,7 @@ class ItemsController < ApplicationController
 
   def update
     render file: 'errors/not_found', status: 404 if current_user.nil?
-    @merchant = User..find_by(slug: params[:merchant_slug])
+    @merchant = User.find_by(slug: params[:merchant_slug])
     item_id = :item_id
     if params[:id]
       item_id = :id

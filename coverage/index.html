@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-11-05T10:52:35-07:00">2018-11-05T10:52:35-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-11-05T10:56:51-07:00">2018-11-05T10:56:51-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">97.72%</span></span>
+    (<span class="covered_percent"><span class="green">99.84%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         3.23
+         3.29
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>40</b> files in total.
-    <b>1887</b> relevant lines. 
-    <span class="green"><b>1844</b> lines covered</span> and
-    <span class="red"><b>43</b> lines missed </span>
+    <b>1886</b> relevant lines. 
+    <span class="green"><b>1883</b> lines covered</span> and
+    <span class="red"><b>3</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -57,7 +57,7 @@
         <td>10</td>
         <td>10</td>
         <td>0</td>
-        <td>147.7</td>
+        <td>149.7</td>
       </tr>
       
       <tr>
@@ -77,7 +77,7 @@
         <td>5</td>
         <td>5</td>
         <td>0</td>
-        <td>7.0</td>
+        <td>8.8</td>
       </tr>
       
       <tr>
@@ -102,12 +102,12 @@
       
       <tr>
         <td class="strong"><a href="#a3b08c6dcf458ca501ab940ead9c600b551762e2" class="src_link" title="app/controllers/items_controller.rb">app/controllers/items_controller.rb</a></td>
-        <td class="red strong">69.49 %</td>
+        <td class="green strong">100.0 %</td>
         <td>85</td>
-        <td>59</td>
-        <td>41</td>
-        <td>18</td>
-        <td>2.3</td>
+        <td>58</td>
+        <td>58</td>
+        <td>0</td>
+        <td>2.8</td>
       </tr>
       
       <tr>
@@ -187,7 +187,7 @@
         <td>26</td>
         <td>26</td>
         <td>0</td>
-        <td>27.7</td>
+        <td>28.0</td>
       </tr>
       
       <tr>
@@ -197,7 +197,7 @@
         <td>15</td>
         <td>15</td>
         <td>0</td>
-        <td>26.8</td>
+        <td>28.0</td>
       </tr>
       
       <tr>
@@ -282,12 +282,12 @@
       
       <tr>
         <td class="strong"><a href="#8af40c38b57b8d68210936439b84ee4ec600229b" class="src_link" title="spec/features/merchant/items_spec.rb">spec/features/merchant/items_spec.rb</a></td>
-        <td class="yellow strong">83.08 %</td>
+        <td class="green strong">100.0 %</td>
         <td>176</td>
         <td>130</td>
-        <td>108</td>
-        <td>22</td>
-        <td>0.9</td>
+        <td>130</td>
+        <td>0</td>
+        <td>1.1</td>
       </tr>
       
       <tr>
@@ -546,8 +546,8 @@
           <code class="ruby">  def current_admin?</code>
         </li>
       
-        <li class="covered" data-hits="554" data-linenumber="12">
-          <span class="hits">554</span>
+        <li class="covered" data-hits="571" data-linenumber="12">
+          <span class="hits">571</span>
           
           <code class="ruby">    current_user &amp;&amp; current_user.admin?</code>
         </li>
@@ -570,8 +570,8 @@
           <code class="ruby">  def build_cart</code>
         </li>
       
-        <li class="covered" data-hits="277" data-linenumber="16">
-          <span class="hits">277</span>
+        <li class="covered" data-hits="280" data-linenumber="16">
+          <span class="hits">280</span>
           
           <code class="ruby">    @cart ||= Cart.new(session[:cart])</code>
         </li>
@@ -836,20 +836,20 @@
           <code class="ruby">  def index </code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="3">
-          <span class="hits">11</span>
+        <li class="covered" data-hits="14" data-linenumber="3">
+          <span class="hits">14</span>
           
           <code class="ruby">    render file: &#39;errors/not_found&#39;, status: 404 unless current_user</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="4">
-          <span class="hits">11</span>
+        <li class="covered" data-hits="14" data-linenumber="4">
+          <span class="hits">14</span>
           
           <code class="ruby">    @items = Item.where(user: current_user)</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="5">
-          <span class="hits">11</span>
+        <li class="covered" data-hits="14" data-linenumber="5">
+          <span class="hits">14</span>
           
           <code class="ruby">    render :&#39;items/index&#39;</code>
         </li>
@@ -1116,11 +1116,11 @@
         <div class="source_table" id="a3b08c6dcf458ca501ab940ead9c600b551762e2">
   <div class="header">
     <h3>app/controllers/items_controller.rb</h3>
-    <h4><span class="red">69.49 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>59</b> relevant lines. 
-      <span class="green"><b>41</b> lines covered</span> and
-      <span class="red"><b>18</b> lines missed.</span>
+      <b>58</b> relevant lines. 
+      <span class="green"><b>58</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -1430,35 +1430,35 @@
         <li class="covered" data-hits="4" data-linenumber="51">
           <span class="hits">4</span>
           
-          <code class="ruby">    item_id = :item_id</code>
+          <code class="ruby">    if params[:slug]</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="52">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="2" data-linenumber="52">
+          <span class="hits">2</span>
           
-          <code class="ruby">    if params[:id]</code>
+          <code class="ruby">      @item = Item.find_by(slug: params[:slug])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="53">
+        <li class="never" data-hits="" data-linenumber="53">
           
           
-          <code class="ruby">      item_id = :id</code>
+          <code class="ruby">    else</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="54">
+        <li class="covered" data-hits="2" data-linenumber="54">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      @item = Item.find(params[:item_slug])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="55">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="55">
+        <li class="covered" data-hits="4" data-linenumber="56">
           <span class="hits">4</span>
-          
-          <code class="ruby">    @item = Item.find(params[item_id])</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="56">
-          
           
           <code class="ruby">    render file: &#39;errors/not_found&#39;, status: 404 unless current_admin? || current_user == @merchant</code>
         </li>
@@ -1469,62 +1469,62 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="58">
-          
+        <li class="covered" data-hits="4" data-linenumber="58">
+          <span class="hits">4</span>
           
           <code class="ruby">    if request.fullpath.split(&#39;/&#39;)[-1] == &#39;disable&#39;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="59">
-          
+        <li class="covered" data-hits="1" data-linenumber="59">
+          <span class="hits">1</span>
           
           <code class="ruby">      flash[:success] = &quot;Item #{@item.id} is now disabled&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="60">
-          
+        <li class="covered" data-hits="1" data-linenumber="60">
+          <span class="hits">1</span>
           
           <code class="ruby">      @item.active = false</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="61">
-          
+        <li class="covered" data-hits="1" data-linenumber="61">
+          <span class="hits">1</span>
           
           <code class="ruby">      @item.save</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="62">
-          
+        <li class="covered" data-hits="1" data-linenumber="62">
+          <span class="hits">1</span>
           
           <code class="ruby">      redirect_to current_admin? ? merchant_items_path(@merchant) : dashboard_items_path</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="63">
-          
+        <li class="covered" data-hits="3" data-linenumber="63">
+          <span class="hits">3</span>
           
           <code class="ruby">    elsif request.fullpath.split(&#39;/&#39;)[-1] == &#39;enable&#39;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="64">
-          
+        <li class="covered" data-hits="1" data-linenumber="64">
+          <span class="hits">1</span>
           
           <code class="ruby">      flash[:success] = &quot;Item #{@item.id} is now enabled&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="65">
-          
+        <li class="covered" data-hits="1" data-linenumber="65">
+          <span class="hits">1</span>
           
           <code class="ruby">      @item.active = true</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="66">
-          
+        <li class="covered" data-hits="1" data-linenumber="66">
+          <span class="hits">1</span>
           
           <code class="ruby">      @item.save</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="67">
-          
+        <li class="covered" data-hits="1" data-linenumber="67">
+          <span class="hits">1</span>
           
           <code class="ruby">      redirect_to current_admin? ? merchant_items_path(@merchant) : dashboard_items_path</code>
         </li>
@@ -1535,26 +1535,26 @@
           <code class="ruby">    else</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="69">
-          
+        <li class="covered" data-hits="2" data-linenumber="69">
+          <span class="hits">2</span>
           
           <code class="ruby">      @item.update(item_params)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="70">
-          
+        <li class="covered" data-hits="2" data-linenumber="70">
+          <span class="hits">2</span>
           
           <code class="ruby">      if @item.save</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="71">
-          
+        <li class="covered" data-hits="1" data-linenumber="71">
+          <span class="hits">1</span>
           
           <code class="ruby">        flash[:success] = &quot;Item updated&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="72">
-          
+        <li class="covered" data-hits="1" data-linenumber="72">
+          <span class="hits">1</span>
           
           <code class="ruby">        redirect_to current_admin? ? merchant_items_path(@merchant) : dashboard_items_path</code>
         </li>
@@ -1565,14 +1565,14 @@
           <code class="ruby">      else</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="74">
-          
+        <li class="covered" data-hits="1" data-linenumber="74">
+          <span class="hits">1</span>
           
           <code class="ruby">        @form_url = merchant_item_path(@merchant, @item)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="75">
-          
+        <li class="covered" data-hits="1" data-linenumber="75">
+          <span class="hits">1</span>
           
           <code class="ruby">        render :edit</code>
         </li>
@@ -1619,8 +1619,8 @@
           <code class="ruby">    def item_params</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="83">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="5" data-linenumber="83">
+          <span class="hits">5</span>
           
           <code class="ruby">      params.require(:item).permit(:user_id, :name, :description, :image, :price, :inventory)</code>
         </li>
@@ -3337,8 +3337,8 @@
           <code class="ruby">  def initialize(initial_contents)</code>
         </li>
       
-        <li class="covered" data-hits="287" data-linenumber="5">
-          <span class="hits">287</span>
+        <li class="covered" data-hits="290" data-linenumber="5">
+          <span class="hits">290</span>
           
           <code class="ruby">    @contents = initial_contents || Hash.new(0)</code>
         </li>
@@ -3361,8 +3361,8 @@
           <code class="ruby">  def total_count</code>
         </li>
       
-        <li class="covered" data-hits="215" data-linenumber="9">
-          <span class="hits">215</span>
+        <li class="covered" data-hits="219" data-linenumber="9">
+          <span class="hits">219</span>
           
           <code class="ruby">    @contents.values.sum</code>
         </li>
@@ -3770,8 +3770,8 @@
           <code class="ruby">  def to_param</code>
         </li>
       
-        <li class="covered" data-hits="151" data-linenumber="29">
-          <span class="hits">151</span>
+        <li class="covered" data-hits="165" data-linenumber="29">
+          <span class="hits">165</span>
           
           <code class="ruby">    slug</code>
         </li>
@@ -3800,8 +3800,8 @@
           <code class="ruby">  def generate_slug</code>
         </li>
       
-        <li class="covered" data-hits="230" data-linenumber="34">
-          <span class="hits">230</span>
+        <li class="covered" data-hits="234" data-linenumber="34">
+          <span class="hits">234</span>
           
           <code class="ruby">    self.slug = name.downcase.delete(&quot; &quot;) + SecureRandom.uuid if name</code>
         </li>
@@ -6540,11 +6540,11 @@
         <div class="source_table" id="8af40c38b57b8d68210936439b84ee4ec600229b">
   <div class="header">
     <h3>spec/features/merchant/items_spec.rb</h3>
-    <h4><span class="yellow">83.08 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
       <b>130</b> relevant lines. 
-      <span class="green"><b>108</b> lines covered</span> and
-      <span class="red"><b>22</b> lines missed.</span>
+      <span class="green"><b>130</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -6851,8 +6851,8 @@
           <code class="ruby">        end</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="51">
-          
+        <li class="covered" data-hits="1" data-linenumber="51">
+          <span class="hits">1</span>
           
           <code class="ruby">        expect(page).to have_content(&quot;Item #{item_1.id} is now disabled&quot;)</code>
         </li>
@@ -6863,20 +6863,20 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="53">
-          
+        <li class="covered" data-hits="1" data-linenumber="53">
+          <span class="hits">1</span>
           
           <code class="ruby">        within &quot;#item-#{item_1.id}&quot; do </code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="54">
-          
+        <li class="covered" data-hits="1" data-linenumber="54">
+          <span class="hits">1</span>
           
           <code class="ruby">          expect(page).to_not have_button(&quot;Disable Item&quot;)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="55">
-          
+        <li class="covered" data-hits="1" data-linenumber="55">
+          <span class="hits">1</span>
           
           <code class="ruby">          expect(page).to have_button(&quot;Enable Item&quot;)</code>
         </li>
@@ -6947,8 +6947,8 @@
           <code class="ruby">        end</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="67">
-          
+        <li class="covered" data-hits="1" data-linenumber="67">
+          <span class="hits">1</span>
           
           <code class="ruby">        expect(page).to have_content(&quot;Item #{item_1.id} is now enabled&quot;)</code>
         </li>
@@ -6959,20 +6959,20 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="69">
-          
+        <li class="covered" data-hits="1" data-linenumber="69">
+          <span class="hits">1</span>
           
           <code class="ruby">        within &quot;#item-#{item_1.id}&quot; do </code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="70">
-          
+        <li class="covered" data-hits="1" data-linenumber="70">
+          <span class="hits">1</span>
           
           <code class="ruby">          expect(page).to have_button(&quot;Disable Item&quot;)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="71">
-          
+        <li class="covered" data-hits="1" data-linenumber="71">
+          <span class="hits">1</span>
           
           <code class="ruby">          expect(page).to_not have_button(&quot;Enable Item&quot;)</code>
         </li>
@@ -7409,44 +7409,44 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="144">
-          
+        <li class="covered" data-hits="1" data-linenumber="144">
+          <span class="hits">1</span>
           
           <code class="ruby">        expect(current_path).to eq dashboard_items_path</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="145">
-          
+        <li class="covered" data-hits="1" data-linenumber="145">
+          <span class="hits">1</span>
           
           <code class="ruby">        item = Item.find(item.id) # fetch from db</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="146">
-          
+        <li class="covered" data-hits="1" data-linenumber="146">
+          <span class="hits">1</span>
           
           <code class="ruby">        within &quot;#item-#{item.id}&quot; do </code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="147">
-          
+        <li class="covered" data-hits="1" data-linenumber="147">
+          <span class="hits">1</span>
           
           <code class="ruby">          expect(page).to have_content(&#39;New Item Name&#39;)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="148">
-          
+        <li class="covered" data-hits="1" data-linenumber="148">
+          <span class="hits">1</span>
           
           <code class="ruby">          expect(page.find(&quot;#item-image-#{item.id}&quot;)[&#39;src&#39;]).to have_content(&#39;new-image.jpg&#39;)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="149">
-          
+        <li class="covered" data-hits="1" data-linenumber="149">
+          <span class="hits">1</span>
           
           <code class="ruby">          expect(page).to have_content(&quot;Price: #{number_to_currency(5)}&quot;)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="150">
-          
+        <li class="covered" data-hits="1" data-linenumber="150">
+          <span class="hits">1</span>
           
           <code class="ruby">          expect(page).to have_content(&quot;Inventory: 100&quot;)</code>
         </li>
@@ -7541,44 +7541,44 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="166">
-          
+        <li class="covered" data-hits="1" data-linenumber="166">
+          <span class="hits">1</span>
           
           <code class="ruby">        expect(current_path).to eq(merchant_item_path(@merchant, item))</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="167">
-          
+        <li class="covered" data-hits="1" data-linenumber="167">
+          <span class="hits">1</span>
           
           <code class="ruby">        expect(page).to have_content(&quot;Name can&#39;t be blank&quot;)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="168">
-          
+        <li class="covered" data-hits="1" data-linenumber="168">
+          <span class="hits">1</span>
           
           <code class="ruby">        expect(page).to have_content(&quot;Description can&#39;t be blank&quot;)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="169">
-          
+        <li class="covered" data-hits="1" data-linenumber="169">
+          <span class="hits">1</span>
           
           <code class="ruby">        expect(page).to have_content(&quot;Price can&#39;t be blank&quot;)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="170">
-          
+        <li class="covered" data-hits="1" data-linenumber="170">
+          <span class="hits">1</span>
           
           <code class="ruby">        expect(page).to have_content(&quot;Price is not a number&quot;)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="171">
-          
+        <li class="covered" data-hits="1" data-linenumber="171">
+          <span class="hits">1</span>
           
           <code class="ruby">        expect(page).to have_content(&quot;Inventory can&#39;t be blank&quot;)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="172">
-          
+        <li class="covered" data-hits="1" data-linenumber="172">
+          <span class="hits">1</span>
           
           <code class="ruby">        expect(page).to have_content(&quot;Inventory is not a number&quot;)</code>
         </li>

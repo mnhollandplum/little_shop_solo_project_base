@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-11-06T11:11:35-07:00">2018-11-06T11:11:35-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-11-06T11:19:28-07:00">2018-11-06T11:19:28-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         3.39
+         3.4
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>41</b> files in total.
-    <b>1966</b> relevant lines. 
-    <span class="green"><b>1963</b> lines covered</span> and
+    <b>1968</b> relevant lines. 
+    <span class="green"><b>1965</b> lines covered</span> and
     <span class="red"><b>3</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -103,11 +103,11 @@
       <tr>
         <td class="strong"><a href="#30b8c2acc467c79d86c1e09535d5096ac69a94f9" class="src_link" title="app/controllers/dashboard_controller.rb">app/controllers/dashboard_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>28</td>
-        <td>22</td>
-        <td>22</td>
+        <td>32</td>
+        <td>24</td>
+        <td>24</td>
         <td>0</td>
-        <td>9.0</td>
+        <td>9.2</td>
       </tr>
       
       <tr>
@@ -1128,8 +1128,8 @@
     <h3>app/controllers/dashboard_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>22</b> relevant lines. 
-      <span class="green"><b>22</b> lines covered</span> and
+      <b>24</b> relevant lines. 
+      <span class="green"><b>24</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1239,67 +1239,91 @@
           <code class="ruby">      render :&#39;merchants/show&#39;</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="18">
+        <li class="covered" data-hits="11" data-linenumber="18">
+          <span class="hits">11</span>
+          
+          <code class="ruby">      @customer_emails = @merchant.customer_emails</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="19">
+          <span class="hits">11</span>
+          
+          <code class="ruby">      @not_customers = @merchant.not_customers</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="8" data-linenumber="22">
           <span class="hits">8</span>
           
           <code class="ruby">    elsif current_admin?</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="19">
+        <li class="covered" data-hits="6" data-linenumber="23">
           <span class="hits">6</span>
           
           <code class="ruby">      @top_3_shipping_states = Order.top_shipping(:state, 3)</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="20">
+        <li class="covered" data-hits="6" data-linenumber="24">
           <span class="hits">6</span>
           
           <code class="ruby">      @top_3_shipping_cities = Order.top_shipping(:city, 3)</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="21">
+        <li class="covered" data-hits="6" data-linenumber="25">
           <span class="hits">6</span>
           
           <code class="ruby">      @top_buyers = Order.top_buyers(3)</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="22">
+        <li class="covered" data-hits="6" data-linenumber="26">
           <span class="hits">6</span>
           
           <code class="ruby">      @top_merchants = User.top_merchants(3)</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="23">
+        <li class="covered" data-hits="6" data-linenumber="27">
           <span class="hits">6</span>
           
           <code class="ruby">      @biggest_orders = Order.biggest_orders(3)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="24">
+        <li class="never" data-hits="" data-linenumber="28">
           
           
           <code class="ruby">    else</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="25">
+        <li class="covered" data-hits="2" data-linenumber="29">
           <span class="hits">2</span>
           
           <code class="ruby">      render file: &#39;errors/not_found&#39;, status: 404</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="26">
+        <li class="never" data-hits="" data-linenumber="30">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="27">
+        <li class="never" data-hits="" data-linenumber="31">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="28">
+        <li class="never" data-hits="" data-linenumber="32">
           
           
           <code class="ruby">end</code>

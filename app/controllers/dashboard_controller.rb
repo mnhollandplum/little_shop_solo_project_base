@@ -1,8 +1,6 @@
 class DashboardController < ApplicationController
   def show
     render file: 'errors/not_found', status: 404 unless current_user
-    @customer_emails = @merchant.customer_emails
-    @not_customers = @merchant.not_customers
 
     if current_user.merchant?
       @merchant = current_user
@@ -17,6 +15,8 @@ class DashboardController < ApplicationController
       @biggest_order = @merchant.biggest_order
       @top_buyers = @merchant.top_buyers(3)
       render :'merchants/show'
+      @customer_emails = @merchant.customer_emails
+      @not_customers = @merchant.not_customers
 
 
     elsif current_admin?

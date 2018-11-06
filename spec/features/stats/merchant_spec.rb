@@ -130,6 +130,14 @@ RSpec.describe 'Merchant Stats' do
       expect(page).to have_content("Download to CSV")
       expect(page).to have_content("Customer Emails")
       expect(page).to have_content("Potential Customer Emails")
+
+      within ('.customer-emails')
+      click_on "Customer Emails"
+
+      visit dashboard_path
+
+      within ('.potential-emails')
+      click_on "Potential Customer Emails"
     end
   end
 end

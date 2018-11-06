@@ -359,16 +359,16 @@ RSpec.describe User, type: :model do
       order_3 = create(:completed_order, user: user_3)
       create(:fulfilled_order_item, quantity: 10, price: 10, order: order_3, item: item_1)
 
-      expect(merchant_1.not_customers).to include(user_2)
+      expect(merchant_1.not_customers).to include(user_2.email)
 
-      expect(merchant_1.not_customers).to_not include(user_1)
-      expect(merchant_1.not_customers).to_not include(user_3)
+      expect(merchant_1.not_customers).to_not include(user_1.email)
+      expect(merchant_1.not_customers).to_not include(user_3.email)
 
 
-      expect(merchant_2.not_customers).to include(user_1)
-      expect(merchant_2.not_customers).to include(user_3)
+      expect(merchant_2.not_customers).to include(user_1.email)
+      expect(merchant_2.not_customers).to include(user_3.email)
 
-      expect(merchant_2.not_customers).to_not include(user_2)
+      expect(merchant_2.not_customers).to_not include(user_2.email)
     end
   end
 end

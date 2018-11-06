@@ -16,7 +16,14 @@ class User < ApplicationRecord
   end
 
   def not_customers
-    User.select('users.*').where.not(email: customer_emails)
+    User.select('users.*').where.not(email: customer_emails).distinct.pluck('users.email')
+  end
+
+  def self.to_csv
+   attributes =  %w{email}
+    CSV generate(headers: true) do |csv|
+     csv << attributes.map{ |attr| user.send(attr) }
+    end
   end
 
   def merchant_orders(status=nil)

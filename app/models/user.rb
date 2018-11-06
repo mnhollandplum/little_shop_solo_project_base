@@ -12,7 +12,11 @@ class User < ApplicationRecord
   before_create :generate_slug
 
   def customer_emails
-    binding.pry
+    items.joins(orders: :user).distinct.pluck('users.email')
+  end
+
+  def not_customers
+    User.select('users.*').where.not(email: customer_emails)
   end
 
   def merchant_orders(status=nil)

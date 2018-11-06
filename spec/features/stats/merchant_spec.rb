@@ -58,10 +58,6 @@ RSpec.describe 'Merchant Stats' do
           expect(page).to have_content("Represents #{(sold_units/total_units*100).round(2)}% of Inventory")
         end
       end
-
-      expect(page).to have_content('Download to CSV')
-      expect(page).to have_content('Customer Emails')
-      expect(page).to have_content('Potential Customer Info')
     end
     it 'shows top 3 states where I have shipped items' do
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@merchant_1)
@@ -126,6 +122,14 @@ RSpec.describe 'Merchant Stats' do
           expect(page).to have_content("#{buyers[2].name}, $#{buyers[2].total_spent}")
         end
       end
+    end
+    it 'shows links to download csv files' do
+      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@merchant_1)
+      visit dashboard_path
+
+      expect(page).to have_content("Download to CSV")
+      expect(page).to have_content("Customer Emails")
+      expect(page).to have_content("Potential Customer Emails")
     end
   end
 end

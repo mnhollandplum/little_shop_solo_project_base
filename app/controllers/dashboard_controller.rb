@@ -19,11 +19,13 @@ class DashboardController < ApplicationController
 
     if params[:type] == "customer_emails"
       respond_to do |format|
+          format.html
           format.csv { send_data @customer_emails.to_csv, filename: "customer-emails.csv"}
         end
     elsif params[:type] == "not_customers"
       respond_to do |format|
-          format.csv { send_data @not_customers.to_csv, filename: "customer-emails.csv"}
+          format.html
+          format.csv { send_data @not_customers.to_csv, filename: "potential_customers.csv"}
         end
     else
       render :'merchants/show'

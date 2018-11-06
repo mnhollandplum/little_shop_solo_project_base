@@ -19,6 +19,13 @@ class User < ApplicationRecord
     User.select('users.*').where.not(email: customer_emails)
   end
 
+  def self.to_csv
+   attributes =  %w{name email}
+    CSV generate(headers: true) do |csv|
+     csv << attributes.values_at(*attributes)
+    end
+  end
+
   def merchant_orders(status=nil)
     if status.nil?
       Order.distinct.joins(:items).where('items.user_id=?', self.id)

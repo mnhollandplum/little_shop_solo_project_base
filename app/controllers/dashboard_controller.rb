@@ -21,7 +21,7 @@ class DashboardController < ApplicationController
       respond_to do |format|
           format.csv { send_data @customer_emails.to_csv, filename: "customer-emails.csv"}
         end
-    elsif params[:type] == "not_customer"
+    elsif params[:type] == "not_customers"
       respond_to do |format|
           format.csv { send_data @not_customers.to_csv, filename: "customer-emails.csv"}
         end

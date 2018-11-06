@@ -1,6 +1,8 @@
 class DashboardController < ApplicationController
   def show
     render file: 'errors/not_found', status: 404 unless current_user
+    @customer_emails = @merchant.customer_emails
+    @not_customers = @merchant.not_customers
 
     if current_user.merchant?
       @merchant = current_user
@@ -15,6 +17,8 @@ class DashboardController < ApplicationController
       @biggest_order = @merchant.biggest_order
       @top_buyers = @merchant.top_buyers(3)
       render :'merchants/show'
+
+
     elsif current_admin?
       @top_3_shipping_states = Order.top_shipping(:state, 3)
       @top_3_shipping_cities = Order.top_shipping(:city, 3)
